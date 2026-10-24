@@ -1,0 +1,95 @@
+/* North Thread – SAMPLE product data. Names, prices and fabrics are placeholders for a portfolio concept. */
+const NT_PRODUCTS = [
+  { id: "fell-crew", name: "Fell Crew Jumper", cat: "Knitwear", type: "jumper", price: 89,
+    colours: [["Moss", "#6B7552"], ["Cobalt", "#2E4E9E"]],
+    photos: [[2705752, "Elina Sazonova", "Woman in a moss green chunky crew-neck jumper over a white collar, in autumn woodland"],
+             [4890733, "Teddy Tavan", "Man in a cobalt blue cable-knit jumper against a blue wall"]],
+    sizes: ["XS", "S", "M", "L", "XL"], soldOut: ["XS"],
+    fabric: "100% lambswool (sample spec). Hand wash cold or use a wool cycle. Dry flat.",
+    fit: "Relaxed fit. Take your usual size; size down for a closer fit.",
+    blurb: "A plain, heavy crew neck for cold mornings and long walks. Knitted tight so it keeps its shape wash after wash." },
+  { id: "tarn-cardigan", name: "Tarn Cardigan", cat: "Knitwear", type: "cardigan", price: 95,
+    colours: [["Bottle", "#2F4A3E"], ["Rust", "#A65A3A"]],
+    photos: [[4936372, "cottonbro studio", "Woman in a bottle green chunky-knit cardigan over a white shirt"],
+             [4210854, "Kaboompics", "Rust chunky knit draped over a wooden chair against a white wall"]],
+    sizes: ["XS", "S", "M", "L", "XL"], soldOut: [],
+    fabric: "80% wool, 20% recycled nylon (sample spec). Hand wash cold. Dry flat.",
+    fit: "Regular fit with room to layer over a shirt.",
+    blurb: "A chunky button-through cardigan with deep pockets. Built to be the layer you reach for most." },
+  { id: "ridge-rollneck", name: "Ridge Roll-neck", cat: "Knitwear", type: "rollneck", price: 92,
+    colours: [["Ecru", "#E8E0CF"], ["Storm", "#8C939A"]],
+    photos: [[9811069, "Daria Nekipelova", "Man in a chunky ecru roll-neck jumper, close-up portrait"],
+             [20775162, "Gursher Gill", "Man in a grey textured-knit roll-neck leaning on a white wall"]],
+    sizes: ["XS", "S", "M", "L", "XL"], soldOut: ["XL"],
+    fabric: "100% merino wool (sample spec). Machine wash on wool cycle, 30°C.",
+    fit: "Slim fit. Size up if you are between sizes.",
+    blurb: "A roll-neck that sits under a coat without bulk. Soft enough to wear next to skin." },
+  { id: "harbour-chore", name: "Harbour Chore Jacket", cat: "Outerwear", type: "jacket", price: 120,
+    colours: [["Rust", "#9C4A22"], ["Check", "#8E8577"]],
+    photos: [[9466721, "Ron Lach", "Man in a rust cotton work jacket with chest pockets over a black tee"],
+             [29259028, "Pexels user", "Man in a grey and cream check overshirt jacket outside a timber cabin"]],
+    sizes: ["XS", "S", "M", "L", "XL"], soldOut: [],
+    fabric: "100% organic cotton canvas (sample spec). Machine wash cold, line dry.",
+    fit: "Boxy fit. Take your usual size.",
+    blurb: "A heavy cotton work jacket with patch pockets. Stiff at first, softens with every wear." },
+  { id: "moorland-coat", name: "Moorland Field Coat", cat: "Outerwear", type: "coat", price: 165,
+    colours: [["Olive", "#5B5A3C"]],
+    photos: [[18026007, "Sadiq Ali", "Man in a long olive field coat with hands in pockets, in a dim doorway"]],
+    sizes: ["S", "M", "L", "XL"], soldOut: [],
+    fabric: "Waxed cotton shell, cotton check lining (sample spec). Sponge clean only. Re-wax yearly.",
+    fit: "Regular fit, long enough to cover a jumper.",
+    blurb: "A field coat for sideways rain. Storm collar, two-way zip and pockets big enough for a map." },
+  { id: "shore-stripe", name: "Shore Stripe Jumper", cat: "Knitwear", type: "jumper", price: 79,
+    colours: [["Navy / Grey", "#2C3352"]],
+    photos: [[45982, "Dom J", "Folded navy and grey block-stripe crew-neck jumper on a pale background"]],
+    sizes: ["XS", "S", "M", "L", "XL"], soldOut: ["M"],
+    fabric: "100% cotton, chunky rib knit (sample spec). Machine wash 30°C. Dry flat.",
+    fit: "Regular fit. Take your usual size.",
+    blurb: "A thick cotton stripe for the in-between months. Wear it over a tee on the beach or under a coat in town." },
+  { id: "daily-tee", name: "Daily Heavy Tee", cat: "Tops", type: "tee", price: 32,
+    colours: [["Chalk", "#EFEBE3"], ["Black", "#1C1C1C"]],
+    photos: [[11671964, "Marina Podrez", "Plain white heavy T-shirt on a white hanger against a white wall"],
+             [8532611, "Hanna Pad", "Plain black T-shirt held up on a white hanger"]],
+    sizes: ["XS", "S", "M", "L", "XL"], soldOut: [],
+    fabric: "240gsm organic cotton jersey (sample spec). Machine wash 30°C.",
+    fit: "Relaxed fit with a slightly dropped shoulder.",
+    blurb: "A thick, structured T-shirt that doesn't go see-through or lose its collar." },
+  { id: "field-oxford", name: "Field Oxford Shirt", cat: "Tops", type: "shirt", price: 58,
+    colours: [["Sky", "#7FA2D6"]],
+    photos: [[17824561, "Peter Kambey", "Man in a sky blue button-up cotton shirt sitting outdoors on grass"]],
+    sizes: ["XS", "S", "M", "L", "XL"], soldOut: [],
+    fabric: "100% cotton oxford cloth (sample spec). Machine wash 40°C.",
+    fit: "Regular fit, button-down collar.",
+    blurb: "An everyday oxford shirt that looks right tucked in or worn open over a tee." },
+  { id: "watch-beanie", name: "Watch Beanie", cat: "Accessories", type: "beanie", price: 24,
+    colours: [["Oat", "#D8C9AE"], ["Snow", "#ECE8E2"], ["Damson", "#3B2A2E"]],
+    photos: [[10644259, "Roman Verton", "Young woman in an oat ribbed beanie with a pom and a blue wool scarf, in winter woods"],
+             [3760627, "Andrea Piacquadio", "Smiling woman in a cream cable-knit beanie, holding up a fleece collar"],
+             [324658, "freestocks.org", "Smiling woman in a dark damson beanie and grey scarf in the snow"]],
+    sizes: ["One size"], soldOut: [],
+    fabric: "100% lambswool (sample spec). Hand wash cold.",
+    fit: "One size. Deep turn-up.",
+    blurb: "A ribbed watch cap with a deep cuff. Warm ears, no fuss." },
+  { id: "lambswool-scarf", name: "Lambswool Scarf", cat: "Accessories", type: "scarf", price: 38,
+    colours: [["Grey Marl", "#A9A8A4"], ["Navy Marl", "#3E4D72"]],
+    photos: [[324658, "freestocks.org", "Grey wool scarf wrapped loosely over a burgundy coat"],
+             [10644259, "Roman Verton", "Navy and grey marl wool scarf wrapped high around the neck"]],
+    sizes: ["One size"], soldOut: [],
+    fabric: "100% lambswool (sample spec). Hand wash cold. Dry flat.",
+    fit: "180 × 30 cm with fringed ends.",
+    blurb: "A long, soft scarf that wraps twice. Brushed for warmth." }
+];
+
+/* Images are free-licence stock photos from Pexels (similar garments, not the sample products). One photo per colourway; credits in README.md. */
+function ntSrc(p, i, small) { return `images/products/${p.id}-${i}${small ? "-sm" : ""}.webp`; }
+const ntPexels = id => `https://www.pexels.com/photo/${id}/`;
+function ntCredit(p, i) { const ph = p.photos[i] || p.photos[0]; return `Stock photo: <a href="${ntPexels(ph[0])}" rel="noopener">${ph[1]} / Pexels</a>. Similar garment shown, not the sample product.`; }
+
+function ntImage(p, colourIdx = 0, label = true, opts = {}) {
+  const i = p.colours[colourIdx] ? colourIdx : 0;
+  const alt = `Stock photo standing in for the ${p.name} in ${p.colours[i][0]}: ${p.photos[i][2]}`;
+  const hover = opts.hover && p.colours[1] ? `<img class="alt" src="${ntSrc(p, 1, true)}" alt="" width="500" height="625" loading="lazy" decoding="async">` : "";
+  return `<div class="ph${hover ? " has-alt" : ""}"><img src="${ntSrc(p, i, !opts.large)}" ${opts.large ? `srcset="${ntSrc(p, i, true)} 500w, ${ntSrc(p, i)} 1000w" sizes="(min-width: 860px) 55vw, 100vw"` : ""} alt="${alt}" width="${opts.large ? 1000 : 500}" height="${opts.large ? 1250 : 625}" ${opts.eager ? "" : 'loading="lazy"'} decoding="async">${hover}${label ? '<span class="ph-label">Stock photo</span>' : ""}</div>`;
+}
+
+const ntMoney = n => "£" + n.toFixed(2).replace(/\.00$/, "");
